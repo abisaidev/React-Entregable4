@@ -62,6 +62,7 @@ h1{
 
 .i-container i{
   color: rgb(2, 97, 97);
+  margin-right: 3px;
 }
 
 .sh-btn{
@@ -193,14 +194,17 @@ h1{
 
 /* Media Queries */
 
-@media screen and ( min-width: 926px ){
+@media screen and ( min-width: 992px ){
   
   .App{
     flex-direction: row;
   }
 
+  body{
+    scroll-behavior: smooth;
+  }
+
   .main-side{
-    border: 1px solid blue;
     height: 100%;
     width: 50%;
     display: flex;
@@ -215,9 +219,8 @@ h1{
   }
 
 
-
-
-
+  
+  
 
 
   .second-side{
@@ -226,19 +229,73 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid greenyellow;
+  }
+  
+  .d-ul{
+    height: 80%;
+    width: 80%;
+  }
+  
+  .users-ul{
+    display: grid;
+    grid-auto-flow: row;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .users-ul li{
+    width: 300px;
+  }
+  
+  ul::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgb(0, 75, 75);
+    border-radius: 5px;
+  }
+
+  ul::-webkit-scrollbar-thumb {
+      background-color: white;
+      border-radius: 5px;
+  }
+}
+
+@media screen and ( min-width: 1300px ){
+
+  .main-side{
+    width: 40%;
+  }
+  .second-side{
+    width: 60%;
   }
 
   .d-ul{
-    width: 80%;
-    border: 1px solid pink;
+    width: 90%;
+    height: 50%;
   }
 
   .users-ul{
-    display: grid;
-    grid-auto-flow: column;
-    overflow-x: auto;
-    align-items: center;
+    grid-template-columns: 300px 300px;
+    gap: 1rem;
+  }
+
+  .users-ul li{
+    margin-bottom: 0;
+  }
+
+}
+
+@media screen and ( min-width: 1800px ){
+
+  .users-ul{
+    grid-template-columns: 300px 300px 300px;
+  }
+
+  .d-ul{
+    width: 95%;
   }
 
 }

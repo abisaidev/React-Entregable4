@@ -63,9 +63,10 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
             <div className='n-user-form'>
                 <h1>users-app</h1>
                 <form onSubmit={submitForm}>
-                    <div className="i-container">                    
-                        <i className='bx bxs-user'></i>
-                        <label htmlFor="first-name"></label>
+                    <div className="i-container">
+                        <label htmlFor="first-name">
+                            <i className='bx bxs-user'></i>
+                        </label>
                         <input
                             type="text"
                             placeholder='First name'
@@ -86,8 +87,9 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
                         />
                     </div>
                     <div className="i-container">
-                        <i className='bx bxs-envelope' ></i>
-                        <label htmlFor="email"></label>
+                        <label htmlFor="email">
+                            <i className='bx bxs-envelope' ></i>
+                        </label>
                         <input
                             type="text"
                             placeholder='Email'
@@ -97,8 +99,9 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
                         />
                     </div>
                     <div className="i-container">
-                        <i className='bx bxs-lock' ></i>
-                        <label htmlFor="password"></label>
+                        <label htmlFor="password">
+                            <i className='bx bxs-lock' ></i>
+                        </label>
                         <input
                             type={isShow ? 'text' : 'password'}
                             placeholder='Password'
@@ -119,8 +122,9 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
                         }
                     </div>
                     <div className="i-container">
-                        <i className='bx bxs-cake' ></i>
-                        <label htmlFor="birthday"></label>
+                        <label htmlFor="birthday">
+                            <i className='bx bxs-cake' ></i>
+                        </label>
                         <input
                             type="date"
                             id='birthday'

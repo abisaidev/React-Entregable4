@@ -6,7 +6,7 @@ const UsersList = ({users, selectUser, deleteUser}) => {
             <div className='d-ul'>
                 <ul className='users-ul'>
                 {users.map(user => (
-                        <li key={user.id}>
+                        <li key={user.id} className='user-card'>
                             <div className="b-info">
                                 <i className='bx bxs-user-circle bx-lg' ></i>
                                 <div className="user-n">
