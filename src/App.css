@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body{
+  background-color: rgb(2, 97, 97);
+}
+
+.App{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.n-user-form{
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: white;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: rgb(2, 97, 97);
+}
+
+.n-user-form input{
+  border: none;
+  background-color: rgb(228, 228, 228);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.i-container{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 5px;
+}
+
+.i-container-ln{
+  display: flex;
+  margin-left: 22px;
+  margin-bottom: 5px;
+}
+
+.i-bro{
+  width: 5px;
+}
+
+.i-container i{
+  color: rgb(2, 97, 97);
+}
+
+.form-btns{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 5px;
+}
+
+.btn-c-u{
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: green;
+  color: white;
+}
+
+.btn-cancel{
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  color: white;
+}
+
+
+
+
+
+.d-ul{
+  width: 95%;
+}
+
+.users-ul li{
+  list-style: none;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  transition: 0.2s;
+  background-color: rgb(0, 75, 75);
+}
+
+.users-ul li h3,
+.users-ul li, p{
+  color: white;
+}
+
+.users-ul li:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: 0.2s;
+}
+
+.users-ul li button:hover{
+  cursor: pointer;
+}
+
+.users-ul li img{
+  width: 45px;
+  border-radius: 50%;
+  height: 45px;
+}
+
+.b-info{
+  display: flex;
+  height: 45px;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.user-n{
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.e-info p{
+  font-size: 0.8rem;
+}
+
+.e-info-i{
+  display: flex;
+  gap: 3px;
+}
+
+.user-btns{
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 3px;
+}
+
+.user-btns button{
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(2, 97, 97);
+  border: none;
+  border-radius: 5px;
+}
+
+.user-btns button:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
