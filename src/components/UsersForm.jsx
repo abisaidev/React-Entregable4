@@ -112,6 +112,7 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
                         id='birthday'
                         onChange={e => setBirthday(e.target.value)}
                         value={birthday}
+                        placeholder='Birthday'
                     />
                 </div>
                 <div className="form-btns">
