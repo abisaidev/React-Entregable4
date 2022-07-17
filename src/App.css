@@ -118,17 +118,15 @@ h1{
   cursor: pointer;
 }
 
-.users-ul li img{
-  width: 45px;
-  border-radius: 50%;
-  height: 45px;
-}
-
 .b-info{
   display: flex;
   height: 45px;
   gap: 10px;
   margin-bottom: 10px;
+}
+
+.b-info i{
+  height: 55px;
 }
 
 .user-n{

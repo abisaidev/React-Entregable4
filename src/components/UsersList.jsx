@@ -7,7 +7,7 @@ const UsersList = ({users, selectUser, deleteUser}) => {
             {users.map(user => (
                     <li key={user.id}>
                         <div className="b-info">
-                            <img src="../src/images/default-pp.jpg" alt="" />
+                            <i className='bx bxs-user-circle bx-lg' ></i>
                             <div className="user-n">
                                 <h3>{user.first_name} {user.last_name}</h3>
                             </div>
