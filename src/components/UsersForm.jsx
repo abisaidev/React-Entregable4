@@ -47,6 +47,7 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
         }
 
         setUserSelected(null);
+        setIsShow(null);
     }
 
     const resetForm = () => {
@@ -58,84 +59,86 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
     }
 
     return (
-        <div className='n-user-form'>
-            <h1>users-app</h1>
-            <form onSubmit={submitForm}>
-                <div className="i-container">                    
-                    <i className='bx bxs-user'></i>
-                    <label htmlFor="first-name"></label>
-                    <input
-                        type="text"
-                        placeholder='First name'
-                        id='first-name'
-                        onChange={e => setFirstName(e.target.value)}
-                        value={first_name}
-                    />
-                    <div className="i-bro"></div>
-                </div>
-                <div className="i-container-ln">
-                    <label htmlFor="last-name"></label>
-                    <input
-                        type="text"
-                        placeholder='Last name'
-                        id='last-name'
-                        onChange={e => setLastName(e.target.value)}
-                        value={last_name}
-                    />
-                </div>
-                <div className="i-container">
-                    <i className='bx bxs-envelope' ></i>
-                    <label htmlFor="email"></label>
-                    <input
-                        type="text"
-                        placeholder='Email'
-                        id='email'
-                        onChange={e => setEmail(e.target.value)}
-                        value={email}
-                    />
-                </div>
-                <div className="i-container">
-                    <i className='bx bxs-lock' ></i>
-                    <label htmlFor="password"></label>
-                    <input
-                        type={isShow ? 'text' : 'password'}
-                        placeholder='Password'
-                        id='password'
-                        onChange={e => setPassword(e.target.value)}
-                        value={password}
-                        size='17'
-                    />
-                    {isShow ? (
-                        <button className='sh-btn' type='button' onClick={() => setIsShow(!isShow)}>
-                            <i className='bx bx-hide' ></i>
+        <div className="main-side">
+            <div className='n-user-form'>
+                <h1>users-app</h1>
+                <form onSubmit={submitForm}>
+                    <div className="i-container">                    
+                        <i className='bx bxs-user'></i>
+                        <label htmlFor="first-name"></label>
+                        <input
+                            type="text"
+                            placeholder='First name'
+                            id='first-name'
+                            onChange={e => setFirstName(e.target.value)}
+                            value={first_name}
+                        />
+                        <div className="i-bro"></div>
+                    </div>
+                    <div className="i-container-ln">
+                        <label htmlFor="last-name"></label>
+                        <input
+                            type="text"
+                            placeholder='Last name'
+                            id='last-name'
+                            onChange={e => setLastName(e.target.value)}
+                            value={last_name}
+                        />
+                    </div>
+                    <div className="i-container">
+                        <i className='bx bxs-envelope' ></i>
+                        <label htmlFor="email"></label>
+                        <input
+                            type="text"
+                            placeholder='Email'
+                            id='email'
+                            onChange={e => setEmail(e.target.value)}
+                            value={email}
+                        />
+                    </div>
+                    <div className="i-container">
+                        <i className='bx bxs-lock' ></i>
+                        <label htmlFor="password"></label>
+                        <input
+                            type={isShow ? 'text' : 'password'}
+                            placeholder='Password'
+                            id='password'
+                            onChange={e => setPassword(e.target.value)}
+                            value={password}
+                            size='17'
+                        />
+                        {isShow ? (
+                            <button className='sh-btn' type='button' onClick={() => setIsShow(!isShow)}>
+                                <i className='bx bx-hide' ></i>
+                            </button>
+                        ) : (
+                            <button className='sh-btn' type='button' onClick={() => setIsShow(!isShow)}>
+                                <i className='bx bx-show' ></i>
+                            </button>
+                        )
+                        }
+                    </div>
+                    <div className="i-container">
+                        <i className='bx bxs-cake' ></i>
+                        <label htmlFor="birthday"></label>
+                        <input
+                            type="date"
+                            id='birthday'
+                            onChange={e => setBirthday(e.target.value)}
+                            value={birthday}
+                            placeholder='Birthday'
+                        />
+                    </div>
+                    <div className="form-btns">
+                        <button className='btn-c-u'>
+                            {userSelected !== null ? 'Update' : 'Create user' }
                         </button>
-                    ) : (
-                        <button className='sh-btn' type='button' onClick={() => setIsShow(!isShow)}>
-                            <i className='bx bx-show' ></i>
-                        </button>
-                    )
-                    }
-                </div>
-                <div className="i-container">
-                    <i className='bx bxs-cake' ></i>
-                    <label htmlFor="birthday"></label>
-                    <input
-                        type="date"
-                        id='birthday'
-                        onChange={e => setBirthday(e.target.value)}
-                        value={birthday}
-                        placeholder='Birthday'
-                    />
-                </div>
-                <div className="form-btns">
-                    <button className='btn-c-u'>
-                        {userSelected !== null ? 'Update' : 'Create user' }
-                    </button>
-                    {userSelected !== null &&
-                        <button className='btn-cancel'>Cancel</button>
-                    }
-                </div>
-            </form>
+                        {userSelected !== null &&
+                            <button className='btn-cancel'>Cancel</button>
+                        }
+                    </div>
+                </form>
+            </div>
         </div>
     );
 };
