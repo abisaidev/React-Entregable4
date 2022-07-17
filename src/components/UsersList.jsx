@@ -22,13 +22,16 @@ const UsersList = ({users, selectUser, deleteUser}) => {
                                 <p>{user.birthday}</p>
                             </div>
                         </div>
-                        <div className="user-btns">
-                            <button onClick={() => selectUser(user)}>
-                                <i className='bx bxs-edit' ></i>
-                            </button>
-                            <button onClick={() => deleteUser(user.id)}>
-                                <i className='bx bx-trash' ></i>
-                            </button>
+                        <div className="user-ls">
+                            <p><b>Status</b>: Active</p>
+                            <div className="user-btns">
+                                <button onClick={() => selectUser(user)}>
+                                    <i className='bx bxs-edit' ></i>
+                                </button>
+                                <button onClick={() => deleteUser(user.id)}>
+                                    <i className='bx bx-trash' ></i>
+                                </button>
+                            </div>
                         </div>
                     </li>
                 ))}

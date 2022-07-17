@@ -144,6 +144,16 @@ h1{
   gap: 3px;
 }
 
+.user-ls{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.user-ls p{
+  font-size: 0.8rem;
+}
+
 .user-btns{
   margin-top: 5px;
   display: flex;
