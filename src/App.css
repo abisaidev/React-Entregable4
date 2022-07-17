@@ -218,6 +218,30 @@ h1{
     margin-right: 20px;
   }
 
+  .sh-btn:hover{
+    cursor: pointer;
+  }
+
+  .btn-c-u:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-c-u{
+    transition: 0.2s;
+  }
+
+  .btn-cancel:hover{
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .btn-cancel{
+    transition: 0.2s;
+  }
+
 
   
   
