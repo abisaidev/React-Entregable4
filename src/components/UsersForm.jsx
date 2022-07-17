@@ -8,6 +8,7 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
     const [ birthday, setBirthday ] = useState('');
+    const [ isShow, setIsShow ] = useState(false);
 
     useEffect(() => {
         if(userSelected !== null){
@@ -97,12 +98,23 @@ const UsersForm = ({getUsers, userSelected, setUserSelected, deselectUser}) => {
                     <i className='bx bxs-lock' ></i>
                     <label htmlFor="password"></label>
                     <input
-                        type="password"
+                        type={isShow ? 'text' : 'password'}
                         placeholder='Password'
                         id='password'
                         onChange={e => setPassword(e.target.value)}
                         value={password}
+                        size='17'
                     />
+                    {isShow ? (
+                        <button className='sh-btn' type='button' onClick={() => setIsShow(!isShow)}>
+                            <i className='bx bx-hide' ></i>
+                        </button>
+                    ) : (
+                        <button className='sh-btn' type='button' onClick={() => setIsShow(!isShow)}>
+                            <i className='bx bx-show' ></i>
+                        </button>
+                    )
+                    }
                 </div>
                 <div className="i-container">
                     <i className='bx bxs-cake' ></i>

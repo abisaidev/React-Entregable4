@@ -62,6 +62,15 @@ h1{
   color: rgb(2, 97, 97);
 }
 
+.sh-btn{
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+}
+
 .form-btns{
   width: 100%;
   display: flex;
